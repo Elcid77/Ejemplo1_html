@@ -1,31 +1,118 @@
-<!--Indica que el docuemnto está escrito en HTML5-->
+
 <!doctype html>
 <!-- Indica que documento está principalmente escrito en español -->
-<html lang="es">
-  <!--Del head lo único vemos es el title que aparwce en la pestaña-->
-  <head>
-    <!--Las etiquetas metas le dicen al navegador que trata el sitio y su contenido -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ZOO Música</title>
-    <link rel="icon" href="img/micro.jpg" type="image/jpg" />
-  </head>
-  <body>
-    <header>
-            <h1> Música en el ZOO</h1>
-      <nav>
-        <ul>
-          <li>Inicio</li>
-          <li>Servicios</li>
-          <li>Porfolio de Artistas</li>
-          <li>El Estudio</li>
-          <li>Nosotros</li>
-        </ul>
-      </nav>
-    </header>
+<html lang="en">
+<!--Del head lo único vemos es el title que aparwce en la pestaña-->
 
-    <main></main>
+<head>
+  <!--Las etiquetas metas le dicen al navegador que trata el sitio y su contenido -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZOO Música</title>
+  <link rel="icon" href="img/micro.jpg" type="image/jpg" />
+</head>
 
-    <footer></footer>
-  </body>
+<body>
+  <header>
+    <h1>Música en el ZOO <span>El regreso animal</span></h1>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="">Servicios</a></li>
+        <li><a href="">Porfolio</a></li>
+        <li><a href="">Nosotros</a></li>
+        <li><a href=""></a>Contactos</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>El 28 de Marzo en Parque de la Amistad</h2>
+      <article>
+        <h3>La Triple Nelson</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          quibusdam recusandae praesentium temporibus ea reprehenderit<br />
+          aperiam id ex eius repudiandae rerum autem fugiat eum quod nihil
+          accusamus, pariatur minus voluptatibus.
+        </p>
+      </article>
+      <article>
+        <h3>Los Prolijos</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          quibusdam recusandae praesentium temporibus ea reprehenderit<br />
+          aperiam id ex eius repudiandae rerum autem fugiat eum quod nihil
+          accusamus, pariatur minus voluptatibus.
+        </p>
+      </article>
+      <article>
+        <h3>La Vela Puerca</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          quibusdam recusandae praesentium temporibus ea reprehenderit<br />
+          aperiam id ex eius repudiandae rerum autem fugiat eum quod nihil
+          accusamus, pariatur minus voluptatibus.
+        </p>
+      </article>
+    </section>
+
+    <section>
+      <figure>
+        <img src="https://www.uniradio.edu.uy/wp-content/uploads/2020/07/La-del-30-Rock-post-dictadura-WEB--752x440.jpg"
+          alt="Afiche de rock" />
+        <figcaption>
+          Sobre la historia del Rock Uruguayo. afiche de un documental
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- Tablas en HTML-->
+
+    <section>
+      <h2>Horario de Espetaculos</h2>
+      <table border="1">
+        <thead>
+          <th>Fecha</th>
+          <th>Horarios</th>
+          <th>Banda</th>
+        </thead>
+
+        <tbody>
+          <td>19 de Agosto</td>
+          <td>21:00 hrs</td>
+          <td>La Triple Nelson</td>
+        </tbody>
+      </table>
+    </section>
+
+
+    <!--Formularios-->
+
+    <section>
+      <h2>Contacto</h2>
+      <form action="#" method="post">
+        <label for="nombre"> Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+        <label for="celular">Celular</label>
+        <input type="number" id="celular" name="celular" required>
+        <label for="email">Email</label>
+        <input type="number" id="email" name="email" required>
+        <label for="mensaje"> Mensaje</label>
+        <textarea name="mensaje" id="mensaje" placeholder="Ingrese su mensaje"></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+
+    <!--Formularios-->
+
+
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+
 </html>

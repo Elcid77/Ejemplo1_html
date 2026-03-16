@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Semántica de una Página Web</title>
+</head>
+<body>
+
+    <header>
+        <h1>Portal Educativo de Tecnología</h1>
+        <p>Recursos para el aprendizaje de desarrollo web</p>
+        
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#conceptos">Conceptos</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="inicio">
+            <h2>Introducción a la Semántica</h2>
+            <article>
+                <h3>¿Qué es HTML5?</h3>
+                <p>HTML5 no es solo una versión del lenguaje, sino una forma de dar <strong>significado</strong> al contenido. El uso de etiquetas correctas ayuda a la accesibilidad y al SEO.</p>
+                <p>Por ejemplo, es preferible usar <code>&lt;article&gt;</code> para contenido independiente que un simple <code>&lt;div&gt;</code>.</p>
+            </article>
+        </section>
+
+        <section id="conceptos">
+            <h2>Elementos de Contenido</h2>
+            <ul>
+                <li><strong>Listas no ordenadas:</strong> Ideales para enumerar elementos sin jerarquía.</li>
+                <li><strong>Imágenes:</strong> Deben incluir siempre el atributo <code>alt</code>.</li>
+            </ul>
+            <figure>
+                <img src="https://via.placeholder.com/400x200" alt="Ejemplo de imagen representativa">
+                <figcaption>Figura 1: Representación de un elemento multimedia con descripción.</figcaption>
+            </figure>
+        </section>
+
+        <section id="recursos">
+            <h2>Horarios de Clase</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Materia</th>
+                        <th>Día</th>
+                        <th>Hora</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Programación I</td>
+                        <td>Lunes</td>
+                        <td>18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Bases de Datos</td>
+                        <td>Miércoles</td>
+                        <td>20:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <aside>
+            <h2>Información Adicional</h2>
+            <p>Este es un elemento <em>aside</em>, utilizado para contenido relacionado indirectamente con el tema principal, como enlaces de interés o publicidad.</p>
+        </aside>
+
+        <section id="contacto">
+            <h2>Formulario de Consulta</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+                
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Montevideo, Uruguay. Todos los derechos reservados.</p>
+        <p>Contacto: info@ejemplo.edu.uy</p>
+    </footer>
+
+</body>
+</html>
